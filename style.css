@@ -118,5 +118,28 @@ body.pages {
 }
 
 
+.conteiner {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.aprende {
+    grid-column: 1/1;
+    font-size: medium;
+    
+}
+
+.picobox {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.clasesde {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
 
 
