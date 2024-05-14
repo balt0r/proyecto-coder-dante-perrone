@@ -1,7 +1,7 @@
+ body{
+    margin: 0;
+ }
  
- 
-
-
 .celeste {
     color: rgb(24, 168, 216);
 }
@@ -52,6 +52,21 @@ header.header {
     z-index: 100;
     }
 
+    @media screen and (max-width: 500px) {
+
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+.pepo{
+    background: rgb(197, 16, 16);
+
+
+}
+
 .logo {
     font-size: 32px;
     color: #fff;
@@ -100,6 +115,7 @@ body.pages {
 .row {
     display: flex;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -109,6 +125,18 @@ body.pages {
 
 .column img {
     margin-top: 5px;
+}
+
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
 }
 
 .mapa {
