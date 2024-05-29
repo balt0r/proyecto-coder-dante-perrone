@@ -1,0 +1,21 @@
+
+@media screen and (max-width: 500px) {
+
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}

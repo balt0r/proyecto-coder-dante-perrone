@@ -1,0 +1,171 @@
+ body{
+    margin: 0;
+ }
+ 
+.celeste {
+    color: rgb(24, 168, 216);
+}
+span {
+    color: rgb(255, 255, 255);
+}
+
+
+body    {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+         }
+
+
+section {text-align: center;    
+        
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 300%;
+        -webkit-text-stroke-width: thin;
+        -webkit-text-stroke-color: black;
+        }
+
+
+
+body.inicio {
+    min-height: 100vh;
+    background-image: url(images/guantes.webp);
+    background-size: cover;
+    background-position: center;  
+}
+
+header.header {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    background: rgb(110, 97, 97);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    }
+
+    @media screen and (max-width: 500px) {
+
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+.pepo{
+    background: rgb(197, 16, 16);
+
+
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    }
+
+.navbar a {
+    font-family: bebas neue;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 40px;
+    }
+
+#somos {
+    margin: 100px auto;
+    
+    font-size: larger;
+    }
+
+body.pages {
+    min-height: 100vh;
+    background-image: url(images/guantesblancos.webp);
+    background-size: cover;
+    background-position: center;
+    }
+
+.contacto {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.galery{
+    box-sizing: border-box;
+    margin: 50px;
+    padding: 0;
+
+}
+
+.expo {
+    width: 100%;  
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img {
+    margin-top: 5px;
+}
+
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.conteiner-inicio {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.aprende {
+    grid-column: 1/1;
+    font-size: medium;
+    
+}
+
+.picobox {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.clasesde {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
