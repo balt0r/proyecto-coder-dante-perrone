@@ -452,7 +452,7 @@ footer {
     text-align: center;
     position: fixed;
   }
-  .navbar a {
+  .navbar {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
