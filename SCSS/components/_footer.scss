@@ -8,14 +8,12 @@ footer{
 
 footer{
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 8%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
 }
 
 .social-icons-container, .footer-menu-container{
@@ -31,24 +29,10 @@ footer{
     width: 50px;
     border-radius: 50px;
     border: 1px solid #f2f2f2;
-    background-image:url(images/whatsapp.png);
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
     margin: 1rem;
 }
 
 .social-icon:hover{
     background-color: #121212;
     filter: invert(1);
-}
-
-.social-icon:nth-of-type(2){
-    background-image: url(images/logotipo-de-instagram.png);
-}
-.social-icon:nth-of-type(3){
-    background-image: url(images/facebook.png);
-}
-.social-icon:nth-of-type(4){
-    background-image: url(images/gorjeo.png);
 }
