@@ -50,8 +50,10 @@ section {
 body.inicio {
   min-height: 100vh;
   background-image: url(/images/guantes.webp);
-  background-size: cover;
+  background-size: 210%;
   background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
 }
 
 body.inicio main {
@@ -68,6 +70,7 @@ body.pages {
   background-image: url(/images/guantesblancos.webp);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
