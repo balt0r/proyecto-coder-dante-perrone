@@ -1,52 +1,59 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
-    position: relative;
-    padding-bottom: 3em;
-    min-height: 100vh;
- }
-
- .celeste {
-   color: $celeste;
+    // padding-bottom: 3em;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
 }
+
+.grow {
+    flex-grow: 1;
+}
+
+.celeste {
+    color: $celeste;
+}
+
 span {
-   color: $blanco;
+    color: $blanco;
 }
 
-body    {
+body {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-     }
+}
 
 .encontranos {
     flex: 1;
 }
 
-section {text-align: center;    
-    
+section {
+    text-align: center;
+
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 300%;
     -webkit-text-stroke-width: thin;
     -webkit-text-stroke-color: black;
-    }
+}
 
 
 
 body.inicio {
-min-height: 100vh;
-background-image: url(/images/guantes.webp);
-background-size: 210%;
-background-position: center; 
-background-repeat: no-repeat; 
-height: 500px;
+    min-height: 100vh;
+    background-image: url(/images/guantes.webp);
+    background-size: 210%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
 }
 
 body.inicio main {
@@ -66,27 +73,27 @@ body.pages {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    }
+}
 
 .contacto {
     text-align: center;
     margin: 100px auto;
 }
 
-.galery{
+.galery {
     box-sizing: border-box;
     margin: 50px;
     padding: 0;
 }
 
-img:hover{
+img:hover {
     animation-name: flash;
     animation-timing-function: ease-in;
     animation-duration: 3s;
 }
 
 .expo {
-    width: 100%;  
+    width: 100%;
 }
 
 .row {
@@ -107,7 +114,7 @@ img:hover{
 .mapa {
     display: flex;
     justify-content: center;
-    
+
 }
 
 
@@ -117,11 +124,12 @@ img:hover{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-@keyframes aparecer{
-    0%{
+@keyframes aparecer {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -129,7 +137,7 @@ img:hover{
 .aprende {
     grid-column: 1/1;
     font-size: medium;
-    
+
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -145,20 +153,24 @@ img:hover{
     grid-row: 2/4;
 }
 
-@keyframes flash{
-    0%{
+@keyframes flash {
+    0% {
         opacity: 0;
     }
-    25%{
+
+    25% {
         opacity: 0.25;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
-    70%{
+
+    70% {
         opacity: 0.7;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }

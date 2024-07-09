@@ -1,36 +1,46 @@
- header.header {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 20px;
-    background: rgb(110, 97, 97);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    }
+ .header {
+     font-family: "Bebas Neue", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     position: sticky;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     // padding: 20px 20px;
+     background: rgb(110, 97, 97);
+     display: flex;
+     justify-content: space-between;
+    //  background:red;
+     
+     align-items: center;
+     z-index: 100;
+ }
 
-    .logo {
-        font-size: 32px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 700;
-        }
-    
-    .navbar a {
-        font-family: bebas neue;
-        font-size: 18px;
-        color: #fff;
-        font-weight: 500;
-        text-decoration: none;
-        margin: 40px;
-        }
-    
- 
+ .logo {
+     font-size: 32px;
+     color: #fff;
+     text-decoration: none;
+     font-weight: 700;
+     
+     margin: 0;
+ }
+
+ .navbar {
+     display: flex;
+     gap:0.2rem;
+     background: green;
+ }
+
+ .navbar a {
+     font-family: bebas neue;
+     font-size: 1.1rem;
+     color: #fff;
+     font-weight: 500;
+     text-decoration: none;
+    //  margin: 40px;
+ }
+
+
 
  /*:root {
     --color_primario: #8527c3fd;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="pico box" content="pagina oficial de pico box gimnasio de boxeo profesional">
@@ -26,42 +27,44 @@
         </nav>
     </header>
 
-    <main>
+    <main class="formContainer grow">
         <div class="formulario">
             <h1>Inicio de sesion</h1>
             <form method="post">
-                <div class="username">
-                    <input type="text" required>
-                    <label>Nombre de usuario</label>
+                <div style="display: flex;gap:1rem;padding-top: 0.5rem;flex-direction: column;">
+                    <div class="" style="display:grid;">
+                        <input placeholder="Usuario" required type="text" name="text" class="formInput">
+                    </div>
+                    <div class="" style="display:grid;">                    
+                        <input placeholder="Contraseña" type="password" name="text" class="formInput">
+                    </div>
+                    <div class="recordar">¿Olvido su contraseña?</div>
                 </div>
-                <div class="contrasenia">
-                    <input type="password" required>
-                    <label>Contraseña</label>
-                </div>
-                <div class="recordar">¿Olvido su contraseña?</div>
                 <input type="submit" value="Iniciar">
+              
                 <div class="registrarse">
                     Quiero hacer el <a href="">registro</a>
                 </div>
             </form>
         </div>
 
-        <footer id="footer">
-            <div class="social-icons-container">
-                <a href="https://www.facebook.com" target="_blank" class="social-icons">
-                    <iconify-icon icon="ic:baseline-whatsapp" noobserver></iconify-icon>
-                </a>
-                <a href="" target="_blank" class="social-icons">
-                    <iconify-icon icon="mdi:instagram" noobserver></iconify-icon>
-                </a>
-                <a href="https://www.facebook.com" target="_blank" class="social-icons">
-                    <iconify-icon icon="ic:baseline-facebook" noobserver></iconify-icon>
-                </a>
-                <a href="https://www.youtube.com" target="_blank" class="social-icons">
-                    <iconify-icon icon="mingcute:youtube-fill" noobserver></iconify-icon>
-                </a>
-            </div>
-        </footer>
     </main>
+    <footer id="footer">
+        <div class="social-icons-container">
+            <a href="https://www.facebook.com" target="_blank" class="social-icons">
+                <iconify-icon icon="ic:baseline-whatsapp" noobserver></iconify-icon>
+            </a>
+            <a href="" target="_blank" class="social-icons">
+                <iconify-icon icon="mdi:instagram" noobserver></iconify-icon>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icons">
+                <iconify-icon icon="ic:baseline-facebook" noobserver></iconify-icon>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="social-icons">
+                <iconify-icon icon="mingcute:youtube-fill" noobserver></iconify-icon>
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>

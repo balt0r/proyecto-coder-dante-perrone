@@ -14,9 +14,13 @@
 
 body {
   margin: 0;
-  position: relative;
-  padding-bottom: 3em;
-  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .celeste {
@@ -165,15 +169,14 @@ img:hover {
     opacity: 1;
   }
 }
-header.header {
+.header {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 20px 20px;
+  width: 100vw;
   background: rgb(110, 97, 97);
   display: flex;
   justify-content: space-between;
@@ -186,15 +189,21 @@ header.header {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  gap: 0.2rem;
+  background: green;
 }
 
 .navbar a {
   font-family: bebas neue;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #fff;
   font-weight: 500;
   text-decoration: none;
-  margin: 40px;
 }
 
 /*:root {
@@ -292,13 +301,15 @@ ol,ul{
 }
 */
 .formulario {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 400px;
   background: white;
   border-radius: 10px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .formulario h1 {
@@ -310,55 +321,6 @@ ol,ul{
 .formulario form {
   padding: 0 40px;
   box-sizing: border-box;
-}
-
-form .username {
-  position: relative;
-  border-bottom: 2px solid #adadad;
-  margin: 30px 0;
-}
-
-.username input {
-  width: 100%;
-  padding: 0 5px;
-  height: 40px;
-  font-size: 16px;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-.username .label {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  color: #adadad;
-  transform: translateY(-50%);
-  font-size: 16px;
-  pointer-events: none;
-  transition: 0.5s;
-}
-
-.username span::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #6c3483;
-  transition: 0.5s;
-}
-
-.username input:focus ~ label,
-.username input:focus ~ label {
-  top: -5px;
-  color: #6c3483;
-}
-
-.username input:focus ~ span::before,
-.username input:focus ~ span::before {
-  width: 100%;
 }
 
 .recordar {
@@ -404,6 +366,30 @@ input[type=submit]:hover {
   text-decoration: underline;
 }
 
+.formInput {
+  width: 100%;
+  height: 45px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.formInput:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.formInput:active {
+  transform: scale(0.95);
+}
+
+.formInput:focus {
+  border: 2px solid grey;
+}
+
 footer {
   margin: 0;
   padding: 0;
@@ -418,8 +404,8 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
+  background: #eaeaea;
+  height: 3rem;
 }
 
 .social-icons-container, .footer-menu-container {
@@ -444,20 +430,14 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
-    position: fixed;
+  .header {
+    padding: 0.4rem;
   }
   .navbar {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 1em;
+    max-width: 250px;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 800px) {
